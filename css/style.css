@@ -39,7 +39,16 @@ ul {
   padding: 0 15px;
 }
 
-/* Logo */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Header and Logo */
+
+.header-container {
+  border-bottom: 1px solid #ececec;
+}
 
 .logo > span {
   font-family: "Raleway", sans-serif;
@@ -122,11 +131,6 @@ ul {
 
 /* Peculiarities-sect */
 
-.peculiarities-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .pcaption {
   color: var(--primary-text-color);
   font-size: 14px;
@@ -157,11 +161,6 @@ ul {
 /* Ourteam-sect */
 .ourteam {
   background: #f5f4fa;
-}
-
-.ourteam-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .fsname {
