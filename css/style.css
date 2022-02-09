@@ -46,6 +46,10 @@ ul {
   padding-bottom: 94px;
 }
 
+.section-ourwork {
+  padding-top: 0;
+}
+
 /* Header and Logo */
 
 .header-border {
@@ -206,10 +210,6 @@ ul {
 
 /* Ourwork-sect */
 
-.ourwork-container {
-  padding-bottom: 94px;
-}
-
 .hcaption {
   color: var(--primary-text-color);
   font-size: 36px;
@@ -324,8 +324,6 @@ ul {
 /* buttons */
 
 .main-container {
-  width: 1200px;
-  margin: 0 auto;
   padding: 94px 0;
 }
 
