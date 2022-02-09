@@ -19,7 +19,9 @@ h3,
 h4,
 h5,
 h6,
-p,
+p {
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -46,8 +48,13 @@ ul {
 
 /* Header and Logo */
 
-.header-container {
-  border-bottom: 1px solid #ececec;
+.header-border {
+  border: 1px solid #ececec;
+}
+
+.logo-flex {
+  display: inline-block;
+  margin-right: 93px;
 }
 
 .logo > span {
@@ -71,6 +78,26 @@ ul {
 
 /* Navbar */
 
+.header-flex {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navmenu {
+  margin-right: 331px;
+}
+
+.nkey {
+  margin-right: 50px;
+}
+
+.nkey:last-child {
+  margin-right: 0;
+}
+
 .nkey > a {
   color: var(--primary-text-color);
   font-size: 14px;
@@ -84,6 +111,14 @@ ul {
   color: var(--accent-color);
 }
 
+.contacts {
+  display: flex;
+}
+
+.contacts-item {
+  margin-left: 50px;
+}
+
 .contacts a {
   color: var(--secondary-text-color);
   font-size: 14px;
@@ -94,6 +129,10 @@ ul {
 .contacts a:hover,
 .contacts a:focus {
   color: var(--accent-color);
+}
+
+.mkey {
+  display: flex;
 }
 
 .mkey .current {
@@ -127,9 +166,21 @@ ul {
   cursor: pointer;
   padding: 10px 32px;
   text-align: center;
+  margin: 0 auto;
+  border-color: transparent;
+  border-radius: 4px;
+  display: block;
+}
+
+.hero-container {
+  padding: 200px 0;
 }
 
 /* Peculiarities-sect */
+
+.peculiarities-flex {
+  display: flex;
+}
 
 .pcaption {
   color: var(--primary-text-color);
@@ -137,6 +188,14 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.detail {
+  margin-right: 30px;
+}
+
+.detail:last-child {
+  margin-right: 0;
 }
 
 .detail > p {
@@ -156,6 +215,23 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.ourwork-flex {
+  display: flex;
+}
+
+.ourwork-flex-item {
+  margin-right: 30px;
+}
+
+.ourwork-flex-item:last-child {
+  margin-right: 0;
+}
+
+.ourwork-flex-item > img {
+  display: block;
 }
 
 /* Ourteam-sect */
@@ -163,16 +239,41 @@ ul {
   background: #f5f4fa;
 }
 
+.ourteam-flex {
+  display: flex;
+}
+
+.ourteam-item {
+  margin-right: 30px;
+}
+
+.ourteam-item:last-child {
+  margin-right: 0;
+}
+
+.ourteam-text {
+  padding: 30px 0;
+}
+
+.ourteam-employee {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .fsname {
   color: var(--primary-text-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .post {
   color: var(--secondary-text-color);
   line-height: 1.18;
+  text-align: center;
 }
 
 /* Footer */
@@ -222,6 +323,39 @@ ul {
 
 /* buttons */
 
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 94px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container-mainbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.fkey {
+  margin-right: 8px;
+}
+
+.fkey:last-child {
+  margin-right: 0;
+}
+
 .fkey > button {
   color: var(--primary-text-color);
   background-color: #f5f4fa;
@@ -230,6 +364,9 @@ ul {
   font-weight: 500;
   line-height: 1.6;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border-color: transparent;
 }
 
 .fkey > button:hover,
@@ -240,11 +377,35 @@ ul {
 
 /* card */
 
-.card > img {
-  margin-bottom: 20px;
+.allworks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.card > h2 {
+.allworks-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.allworks-item:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.allworks-item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.card > img {
+  display: block;
+}
+
+.allworks-text {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.allworks-text > h2 {
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
@@ -252,7 +413,7 @@ ul {
   margin-bottom: 4px;
 }
 
-.card > p {
+.allworks-text > p {
   color: var(--secondary-text-color);
   line-height: 1.87;
 }

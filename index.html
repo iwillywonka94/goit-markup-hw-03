@@ -15,9 +15,11 @@
 
 <body>
     <header>
-        <div class="container">
-            <nav class="navmenu">
+        <div class="container header-flex">
+            <div class="logo-flex">
                 <a href="/index.html" class="link logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+            </div>
+            <nav class="navmenu">
                 <ul class="mkey list">
                     <li class="nkey">
                         <a href="/" class="link current">Студия</a>
@@ -34,7 +36,7 @@
                 <li>
                     <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="contacts-item">
                     <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
                 </li>
             </ul>
@@ -42,14 +44,14 @@
     </header>
     <main>
         <section class="hero">
-            <div class="container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <div class="container hero-container">
+                <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" class="hero-button">Заказать услугу</button>
             </div>
         </section>
         <section class="peculiarities">
             <div class="container section">
-                <ul class="list">
+                <ul class="list peculiarities-flex">
                     <li class="detail">
                         <h3 class="pcaption">Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -72,14 +74,14 @@
         <section class="ourwork">
             <div class="container ourwork-container">
                 <h2 class="hcaption">Чем мы занимаемся</h2>
-                <ul class="list">
-                    <li>
+                <ul class="list ourwork-flex">
+                    <li class="ourwork-flex-item">
                         <img src="image/wpwkeybord.jpg" alt="Руки набирающие текст на клавиатуре" width="370" height="294">
                     </li>
-                    <li>
+                    <li class="ourwork-flex-item">
                         <img src="image/wpwphone.jpg" alt="Человек держит в руках телефон" width="370" height="294">
                     </li>
-                    <li>
+                    <li class="ourwork-flex-item">
                         <img src="image/wpwtable.jpg" alt="Человек смотрин на планшет возле компютера" width="370" height="294">
                     </li>
                 </ul>
@@ -88,35 +90,43 @@
         <section class="ourteam">
             <div class="container section">
                 <h2 class="hcaption">Наша команда</h2>
-                <ul class="list">
-                    <li class="team">
-                        <div class="pdesigner">
+                <ul class="list ourteam-flex">
+                    <li class="team ourteam-item">
+                        <div class="ourteam-employee">
                             <img src="image/team_demianov.jpg" alt="Мужчина в коричневой рубашке с бородой" width="270" height="260">
-                            <h3 class="fsname">Игорь Демьяненко</h3>
-                            <p class="post">Product Designer</p>
+                            <div class="ourteam-text">
+                                <h3 class="fsname">Игорь Демьяненко</h3>
+                                <p class="post">Product Designer</p>
+                            </div>
                         </div>
                     </li>
-                    <li class="team">
-                        <div class="fdevelop">
+                    <li class="team ourteam-item">
+                        <div class="ourteam-employee">
                             <img src="image/team_repina.jpg" alt="Женщина с светлыми волосами в чёрном пиджаке" width="270"
                                 height="260">
-                            <h3 class="fsname">Ольга Репина</h3>
-                            <p class="post">Frontend Developer</p>
+                            <div class="ourteam-text">
+                                <h3 class="fsname">Ольга Репина</h3>
+                                <p class="post">Frontend Developer</p>
+                            </div>
                         </div>
                     </li>
-                    <li class="team">
-                        <div class="marketing">
+                    <li class="team ourteam-item">
+                        <div class="ourteam-employee">
                             <img src="image/team_tarasov.jpg" alt="Мужчина в голубой рубашке улыбается" width="270" height="260">
-                            <h3 class="fsname">Николай Тарасов</h3>
-                            <p class="post">Marketing</p>
+                            <div class="ourteam-text">
+                                <h3 class="fsname">Николай Тарасов</h3>
+                                <p class="post">Marketing</p>
+                            </div>
                         </div>
                     </li>
-                    <li class="team">
-                        <div class="uidesigner">
+                    <li class="team ourteam-item">
+                        <div class="ourteam-employee">
                             <img src="image/team_ermakov.jpg" alt="Мужчина в чёрном джемпере с бородой и в очках" width="270"
                                 height="260">
-                            <h3 class="fsname">Михаил Ермаков</h3>
-                            <p class="post">UI Designer</p>
+                            <div class="ourteam-text">
+                                <h3 class="fsname">Михаил Ермаков</h3>
+                                <p class="post">UI Designer</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
