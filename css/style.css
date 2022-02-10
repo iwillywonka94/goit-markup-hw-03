@@ -90,10 +90,6 @@ ul {
   align-items: center;
 }
 
-.navmenu {
-  margin-right: 331px;
-}
-
 .nkey {
   margin-right: 50px;
 }
@@ -117,6 +113,7 @@ ul {
 
 .contacts {
   display: flex;
+  margin-left: auto;
 }
 
 .contacts-item {
